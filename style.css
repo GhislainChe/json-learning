@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#wel{
+    font-size: 2em;
+    color: #205cff;
+    text-align: center;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid #205cff;
+    border-radius: 12px;
+    /* padding: 10px; */
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card .top{
+    width: 100%;
+    height: 40%;
+    background-color: #205cff;
+}
+.card .bottom{
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+    /* background-color: #273763; */
+}
+
+.card .bottom h1{
+    font-size: 1.5em;
+    color: #205cff;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1px;
+    margin-top: 27px;
+    text-transform: uppercase;
+}
+.card .bottom h2{
+    font-size: 1.2em;
+    color: #000000;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.card .bottom p{
+    font-size: .9em;
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 500px;
+    font-weight: 400;
+}
+
+.card .bottom #skills{
+    margin-top: 20px;
+    font-size: .9em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.profile{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    top: 25%;
+    left: 10px;
+    background-image: url(back.png);
+    background-position: center;
+    background-size: cover;
+}
