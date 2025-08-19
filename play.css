@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding:0;
+}
+
+body{
+  background:url(anaelle..jpg)
+}
+
+.navbar{
+  background-color: green;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+.menu ol{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  
+}
+
+.container{
+  background: white;
+  width:90%;
+  margin: 100px auto 0;
+  max-width: 600px;
+  padding: 30px;
+  
+}
+
+.quiz{
+  padding: 20px 0;
+  background: white;
+  color:black;
+  font-weight: 500;
+  width:100%;
+}
+.btn{
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 0;
+  transition: 0.7s;
+  border: 1px solid black;
+  width: 100%;
+  
+}
+
+.btn:hover:not([disabled]){
+  background: black;
+  color:white;
+}
+.btn:disabled{
+  cursor: no-drop;
+}
+
+#next-btn{
+  background: green;
+  color: white;
+  font-weight: 500;
+  width:150px;
+  padding: 10px;
+  margin: 20px auto 0;
+  border: 0;
+  cursor: pointer;
+  display: none;
+  
+}
+
+.correct{
+  background: green;
+}
+
+.incorrect{
+  background: red;
+}
