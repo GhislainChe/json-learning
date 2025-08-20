@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joke</title>
+    <link rel="stylesheet" href="joke.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Randon Unfunny Joke Generator</h1>
+        <div class="output" id="jokeOutput">
+            <p>Click the button to generate a Joke</p>
+        </div>
+        <button id="jokeBtn">Get Joke</button>
+    </div>
+    <script>
+        let butt = document.getElementById("jokeBtn");
+        let jokeOutput = document.getElementById("jokeOutput");
+
+        butt.addEventListener('click', coming)
+
+        async function coming() {
+            try{
+                let answer = await fetch("https://official-joke-api.appspot.com/random_joke")
+                let ans = await answer.json()
+
+                console.log(ans)
+                jokeOutput.innerHTML = `${ans.setup} <br> -${ans.punchline}`
+            }
+            catch (error){
+                jokeOutput.innerText = 'Oups! could not get joke for you at the moment'
+            }
+        }
+    </script>
+</body>
+</html>
